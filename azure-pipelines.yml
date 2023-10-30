@@ -1,0 +1,110 @@
+
+parameters:
+  - name: build_android
+    displayName: Build the Android APKs?
+    type: boolean
+    default: true
+  - name: deploy_android
+    displayName: Deploy APKs to Firebase?
+    type: boolean
+    default: false
+  - name: build_ios
+    displayName: Build the iOS IPAs?
+    type: boolean
+    default: true
+  - name: deploy_ios
+    displayName: Deploy IPAs to TestFlight?
+    type: boolean
+    default: false
+
+variables:
+  - group: 'Android'
+  - group: 'iOS'
+  - name: flutterSdkVersion
+    value: '2.8.1'
+  - name: projectDirectory
+    value: $(Build.SourcesDirectory)
+  - name: macos_agent
+    value: "macOS-latest"
+
+# Do not set PR triggers here. They must be set in the branch policies instead
+trigger:
+  branches:
+    include:
+      - master
+      - dev
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: 'Common Build Templates/common-mobile'
+
+stages:
+  - stage: Config
+    jobs:
+      - job: config
+        displayName: Configure variables
+        pool:
+          vmImage: "$(macos_agent)"
+        steps:
+          - template: .azuredevops/pipelines/config.yaml
+
+  - stage: Build
+    dependsOn: Config
+    jobs:
+      - job: build_android
+        displayName: Build for Android
+        condition: eq(${{ parameters.build_android }}, true)
+        pool:
+          vmImage: "$(macos_agent)"
+        steps:
+          - template: .azuredevops/pipelines/build_android.yaml
+            parameters:
+              workingDirectory: '$(projectDirectory)'
+              flutterSdkVersion: '$(flutterSdkVersion)'
+              buildNumber: '$(Build.BuildId)'
+
+      - job: build_ios
+        displayName: Build for iOS
+        condition: eq(${{ parameters.build_ios }}, true)
+        pool:
+          vmImage: "$(macos_agent)"
+        steps:
+          - template: .azuredevops/pipelines/build_ios.yaml
+            parameters:
+              workingDirectory: '$(projectDirectory)'
+              flutterSdkVersion: '$(flutterSdkVersion)'
+              buildNumber: '$(Build.BuildId)'
+              certSecureFile: '$(p12_filename)'
+              certPwd: '$(p12_password)'
+              appstore_provisioning_profile: '$(appstore_provisioning_profile)'
+              apple_cert_sign_identity: '$(codesign_identity)'
+              apple_prov_profile_uuid: '$(APPLE_PROV_PROFILE_UUID)'
+              adhoc_provisioning_profile: $(adhoc_provisioning_profile)
+
+  - stage: Deploy
+    dependsOn: Build
+    # Only run this on Dev or Master or when the flag has set
+    condition: or(
+      eq(${{ parameters.deploy_android }}, true),
+      eq(${{ parameters.deploy_ios }}, true),
+      and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev')),
+      and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+      )
+    jobs:
+      - template: .azuredevops/pipelines/deploy_android.yaml
+        parameters:
+          deploy_android: ${{ parameters.deploy_android }}
+
+      - job: deploy_store
+        displayName: 'Deploy to TestFlight'
+        pool:
+            vmImage: "$(macos_agent)"
+        condition: or(
+          ${{ parameters.deploy_ios }},
+          and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/dev')),
+          and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
+          )
+        steps:
+          - template: 'deploy-template-ios.yml@templates'
