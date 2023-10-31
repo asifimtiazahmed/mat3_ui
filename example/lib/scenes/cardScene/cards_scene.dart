@@ -1,4 +1,4 @@
-import 'package:atco_ui/atco_ui.dart';
+import 'package:material_ui/mat3_ui.dart';
 import 'package:flutter/material.dart';
 
 class CardsScene extends StatelessWidget {
@@ -23,7 +23,7 @@ class CardsScene extends StatelessWidget {
             SizedBox(height: 16),
             ActionCard(
               title: 'Title with Action button',
-              action: AtcoIconButton(
+              action: Mat3IconButton(
                 icon: Icon(Icons.delete),
                 onPressed: () => ScaffoldMessenger.of(context).showSnackBar(snackBar),
               ),

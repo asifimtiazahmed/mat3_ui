@@ -1,8 +1,8 @@
-import 'package:atco_ui/src/resources/atco_colors.dart';
+import 'package:material_ui/src/resources/mat3_colors.dart';
 import 'package:flutter/material.dart';
 
 /// Theme Configuration for light and Dark themes.
-class AtcoSwitchTheme {
+class Mat3SwitchTheme {
 
   /// Light theme configuration
   static final SwitchThemeData lightTheme = SwitchThemeData(
@@ -18,25 +18,25 @@ class AtcoSwitchTheme {
 
   static Color _getTrackColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.selected) && states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.primary[95]! : AtcoColors.primary[90]!;
+      return isLightMode ? Mat3Colors.primary[95]! : Mat3Colors.primary[90]!;
     } else if (states.contains(MaterialState.selected)) {
-      return isLightMode ? AtcoColors.primary[90]! : AtcoColors.primary[30]!;
+      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[30]!;
     } else if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.neutral[70]! : AtcoColors.neutral[20]!;
+      return isLightMode ? Mat3Colors.neutral[70]! : Mat3Colors.neutral[20]!;
     } else {
-      return isLightMode ? AtcoColors.neutral : AtcoColors.neutral[30]!;
+      return isLightMode ? Mat3Colors.neutral : Mat3Colors.neutral[30]!;
     }
   }
 
   static Color _getThumpColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.selected) && states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.primary[80]! : AtcoColors.primary[70]!;
+      return isLightMode ? Mat3Colors.primary[80]! : Mat3Colors.primary[70]!;
     } else if (states.contains(MaterialState.selected)) {
-      return isLightMode ? AtcoColors.primary : AtcoColors.primary[90]!;
+      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[90]!;
     } else if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.neutral[90]! : AtcoColors.neutral[40]!;
+      return isLightMode ? Mat3Colors.neutral[90]! : Mat3Colors.neutral[40]!;
     } else {
-      return isLightMode ? AtcoColors.white : AtcoColors.neutral[90]!;
+      return isLightMode ? Mat3Colors.white : Mat3Colors.neutral[90]!;
     }
   }
 }

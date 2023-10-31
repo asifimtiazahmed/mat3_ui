@@ -1,5 +1,5 @@
-import 'package:atco_ui/atco_ui.dart';
-import 'package:example/scenes/dialogScene/dialog_vm.dart';
+import 'package:material_ui/mat3_ui.dart';
+import 'package:material_ui_eg/scenes/dialogScene/dialog_vm.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -74,7 +74,7 @@ class DialogScene extends StatelessWidget {
   Future<void> _showDialog1(BuildContext context, bool isHorizontalActionButton) {
     return showDialog(
       context: context,
-      builder: (_) => AtcoAlertDialog(
+      builder: (_) => Mat3AlertDialog(
         title: title,
         description: description,
         alignButtonsHorizontally: isHorizontalActionButton,
@@ -92,7 +92,7 @@ class DialogScene extends StatelessWidget {
         create: (_) => DialogVM(),
         child: Consumer<DialogVM>(
           builder: (_, vm, __) {
-            return AtcoAlertDialog(
+            return Mat3AlertDialog(
               title: title,
               showTitleDivider: true,
               showActionButtonsDivider: true,

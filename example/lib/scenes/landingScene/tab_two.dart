@@ -1,4 +1,4 @@
-import 'package:atco_ui/atco_ui.dart';
+import 'package:material_ui/mat3_ui.dart';
 import 'package:flutter/material.dart';
 
 class TabInputs extends StatefulWidget {
@@ -65,7 +65,7 @@ class _TabInputsState extends State<TabInputs> {
               label: Text('Error Field'),
               helperText: 'Write a character in order to see the error.',
               errorText: _validate ? 'This is error message. Clear the field.' : null,
-              suffixIcon: AtcoIconButton(
+              suffixIcon: Mat3IconButton(
                 onPressed: () => setState(() {
                   _textController.text = '';
                   _validate = false;

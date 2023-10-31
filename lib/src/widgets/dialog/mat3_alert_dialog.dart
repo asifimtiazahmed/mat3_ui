@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 /// Default implementation of the Dialog to be used in the ATCO applications.
-class AtcoAlertDialog extends StatelessWidget {
+class Mat3AlertDialog extends StatelessWidget {
   /// Creates a dialog.
   ///
   /// Typically used in conjunction with [showDialog].
-  const AtcoAlertDialog({
+  const Mat3AlertDialog({
     super.key,
     this.content,
     this.description,

@@ -1,3 +1,4 @@
-## 0.0.1
+## 1.0.0
 
-* TODO: Describe initial release.
+* Updating all the classes and files to match the theme
+

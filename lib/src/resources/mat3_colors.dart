@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 /// Reference:
 /// 1) https://www.figma.com/file/3vTg9unqtwvXm30r4Dl3Ba/IDES-Design-System?node-id=8288%3A225882
 ///
-class AtcoColors {
+class Mat3Colors {
   static const MaterialColor night = neutral;
   static const MaterialColor neutral = MaterialColor(0xFF919191, neutralColors);
 

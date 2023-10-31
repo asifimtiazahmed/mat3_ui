@@ -1,6 +1,6 @@
 
 /// Based on Different type of messages on IDES
-enum AtcoMessageType {
+enum Mat3MessageType {
   /// Background: Light Blue, TextColor: Black
   blue1,
   /// Background: Light Blue, TextColor: Blue

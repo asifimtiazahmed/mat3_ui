@@ -1,8 +1,8 @@
-import 'package:example/scenes/landingScene/drawer_view.dart';
-import 'package:example/scenes/landingScene/landing_vm.dart';
-import 'package:example/scenes/landingScene/tab_one.dart';
-import 'package:example/scenes/landingScene/tab_three.dart';
-import 'package:example/scenes/landingScene/tab_two.dart';
+import 'package:material_ui_eg/scenes/landingScene/drawer_view.dart';
+import 'package:material_ui_eg/scenes/landingScene/landing_vm.dart';
+import 'package:material_ui_eg/scenes/landingScene/tab_one.dart';
+import 'package:material_ui_eg/scenes/landingScene/tab_three.dart';
+import 'package:material_ui_eg/scenes/landingScene/tab_two.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

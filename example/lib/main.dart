@@ -1,11 +1,11 @@
-import 'package:atco_ui/atco_ui.dart';
-import 'package:example/scenes/cardScene/cards_scene.dart';
-import 'package:example/scenes/colourScene/color_scene.dart';
-import 'package:example/scenes/counterScene/counter_scene.dart';
-import 'package:example/scenes/dialogScene/dialog_scene.dart';
-import 'package:example/scenes/landingScene/landing_scene.dart';
-import 'package:example/scenes/notificationScene/notification_scene.dart';
-import 'package:example/scenes/typographyScene/typography_scene.dart';
+import 'package:material_ui/mat3_ui.dart';
+import 'package:material_ui_eg/scenes/cardScene/cards_scene.dart';
+import 'package:material_ui_eg/scenes/colourScene/color_scene.dart';
+import 'package:material_ui_eg/scenes/counterScene/counter_scene.dart';
+import 'package:material_ui_eg/scenes/dialogScene/dialog_scene.dart';
+import 'package:material_ui_eg/scenes/landingScene/landing_scene.dart';
+import 'package:material_ui_eg/scenes/notificationScene/notification_scene.dart';
+import 'package:material_ui_eg/scenes/typographyScene/typography_scene.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-      theme: AtcoTheme.lightTheme,
-      darkTheme: AtcoTheme.darkTheme,
-      title: 'ATCO Design System Demo',
+      theme: Mat3Theme.lightTheme,
+      darkTheme: Mat3Theme.darkTheme,
+      title: 'Material3 Design System Demo',
       initialRoute: '/',
       routes: {
         '/': (context) => LandingScene(),

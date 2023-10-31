@@ -1,7 +1,7 @@
-import 'package:atco_ui/src/resources/atco_strings.dart';
-import 'package:atco_ui/src/widgets/dialog/atco_alert_dialog.dart';
-import 'package:atco_ui/src/widgets/dialog/dialog_buttons.dart';
-import 'package:atco_ui/src/widgets/loading/atco_loading.dart';
+import 'package:material_ui/src/resources/mat3_strings.dart';
+import 'package:material_ui/src/widgets/dialog/mat3_alert_dialog.dart';
+import 'package:material_ui/src/widgets/dialog/dialog_buttons.dart';
+import 'package:material_ui/src/widgets/loading/mat3_loading.dart';
 import 'package:flutter/material.dart';
 
 /// Default dialog to be used when you want to display a message.
@@ -13,7 +13,7 @@ Future<void> displayMessage(
 }) {
   return showDialog(
     context: context,
-    builder: (_) => AtcoAlertDialog(
+    builder: (_) => Mat3AlertDialog(
       title: title,
       description: message,
       insetPadding: insetPadding,
@@ -25,13 +25,13 @@ Future<void> displayMessage(
 /// Default dialog to be used when you want to display a loading message.
 Future<void> displayLoadingMessage(
   BuildContext context, {
-  String message = AtcoStrings.loadingMessage,
+  String message = Mat3Strings.loadingMessage,
   EdgeInsets? insetPadding,
 }) {
   return showDialog(
     context: context,
     // barrierDismissible: false,
-    builder: (_) => AtcoAlertDialog(
+    builder: (_) => Mat3AlertDialog(
       content: SizedBox(
         height: 100,
         child: AtcoLoading(message: message),

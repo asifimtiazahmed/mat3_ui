@@ -1,16 +1,16 @@
-import 'package:atco_ui/src/resources/atco_colors.dart';
-import 'package:atco_ui/src/theme/atco_theme_text.dart';
+import 'package:material_ui/src/resources/mat3_colors.dart';
+import 'package:material_ui/src/theme/mat3_theme_text.dart';
 import 'package:flutter/material.dart';
 
 /// Theme Configuration for light and Dark themes.
-class AtcoTextButtonTheme {
+class Mat3TextButtonTheme {
 
   /// Light theme configuration
   static final TextButtonThemeData lightTheme = TextButtonThemeData(
     style: ButtonStyle(
       fixedSize: MaterialStateProperty.resolveWith<Size?>((states) => const Size.fromHeight(48)),
       padding: MaterialStateProperty.resolveWith<EdgeInsetsGeometry?>((_) => EdgeInsets.zero),
-      textStyle: MaterialStateProperty.resolveWith<TextStyle?>((_) => AtcoThemeText.lightTheme.labelLarge),
+      textStyle: MaterialStateProperty.resolveWith<TextStyle?>((_) => Mat3ThemeText.lightTheme.labelLarge),
       foregroundColor: MaterialStateProperty.resolveWith<Color?>((state) => _getForegroundColor(state, true)),
       overlayColor: MaterialStateProperty.resolveWith<Color?>((state) => _getOverlayColor(state, true)),
       // shape: MaterialStateProperty.resolveWith<OutlinedBorder?>((state) => _getShape(state, true)),
@@ -22,7 +22,7 @@ class AtcoTextButtonTheme {
     style: ButtonStyle(
       fixedSize: MaterialStateProperty.resolveWith<Size?>((states) => const Size.fromHeight(48)),
       padding: MaterialStateProperty.resolveWith<EdgeInsetsGeometry?>((_) => EdgeInsets.zero),
-      textStyle: MaterialStateProperty.resolveWith<TextStyle?>((_) => AtcoThemeText.darkTheme.labelLarge),
+      textStyle: MaterialStateProperty.resolveWith<TextStyle?>((_) => Mat3ThemeText.darkTheme.labelLarge),
       foregroundColor: MaterialStateProperty.resolveWith<Color?>((states) => _getForegroundColor(states, false)),
       overlayColor: MaterialStateProperty.resolveWith<Color?>((states) => _getOverlayColor(states, false)),
       // shape: MaterialStateProperty.resolveWith<OutlinedBorder?>((state) => _getShape(state, false)),
@@ -31,23 +31,23 @@ class AtcoTextButtonTheme {
 
   static Color _getForegroundColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.neutral[50]! : AtcoColors.neutral[40]!;
+      return isLightMode ? Mat3Colors.neutral[50]! : Mat3Colors.neutral[40]!;
     } else if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return isLightMode ? AtcoColors.primary[20]! : AtcoColors.primary[95]!;
+      return isLightMode ? Mat3Colors.primary[20]! : Mat3Colors.primary[95]!;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? AtcoColors.primary[30]! : AtcoColors.primary[80]!;
+      return isLightMode ? Mat3Colors.primary[30]! : Mat3Colors.primary[80]!;
     } else {
-      return isLightMode ? AtcoColors.primary : AtcoColors.primary[80]!;
+      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
     }
   }
 
   static Color _getOverlayColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return AtcoColors.transparent;
+      return Mat3Colors.transparent;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? AtcoColors.primary[90]! : AtcoColors.primary[20]!;
+      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[20]!;
     } else {
-      return isLightMode ? AtcoColors.primary : AtcoColors.primary[90]!;
+      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[90]!;
     }
   }
 

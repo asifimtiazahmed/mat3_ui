@@ -1,4 +1,4 @@
-import 'package:example/scenes/landingScene/landing_vm.dart';
+import 'package:material_ui_eg/scenes/landingScene/landing_vm.dart';
 import 'package:flutter/material.dart';
 
 class TabButtons extends StatelessWidget {

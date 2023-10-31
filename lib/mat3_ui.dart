@@ -1,19 +1,19 @@
 library atco_ui;
 
-export 'src/resources/atco_colors.dart';
-export 'src/theme/atco_theme.dart';
-export 'src/theme/atco_theme_text.dart';
+export 'src/resources/mat3_colors.dart';
+export 'src/theme/mat3_theme.dart';
+export 'src/theme/mat3_theme_text.dart';
 export 'src/utils/constants.dart';
 export 'src/utils/debouncer.dart';
 export 'src/utils/extension_context.dart';
 export 'src/utils/map_style_loader.dart';
 export 'src/utils/platform.dart';
 export 'src/utils/scroll_behaviour.dart';
-export 'src/widgets/buttons/atco_icon_button.dart';
+export 'src/widgets/buttons/mat3_icon_button.dart';
 export 'src/widgets/card/action_card.dart';
-export 'src/widgets/dialog/atco_alert_dialog.dart';
+export 'src/widgets/dialog/mat3_alert_dialog.dart';
 export 'src/widgets/dialog/dialog_buttons.dart';
 export 'src/widgets/dialog/dialog_messages.dart';
-export 'src/widgets/loading/atco_loading.dart';
-export 'src/widgets/message_view/atco_message_type.dart';
-export 'src/widgets/message_view/atco_message_view.dart';
+export 'src/widgets/loading/mat3_loading.dart';
+export 'src/widgets/message_view/mat3_message_type.dart';
+export 'src/widgets/message_view/mat3_message_view.dart';

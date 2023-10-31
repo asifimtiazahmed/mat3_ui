@@ -1,8 +1,8 @@
-import 'package:atco_ui/src/resources/atco_colors.dart';
+import 'package:material_ui/src/resources/mat3_colors.dart';
 import 'package:flutter/material.dart';
 
 /// Theme Configuration for light and Dark themes.
-class AtcoRadioButtonTheme {
+class Mat3RadioButtonTheme {
 
   /// Light theme configuration
   static final RadioThemeData lightTheme = RadioThemeData(
@@ -16,13 +16,13 @@ class AtcoRadioButtonTheme {
 
   static Color _getFillColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.selected) && states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.neutral : AtcoColors.neutral[40]!;
+      return isLightMode ? Mat3Colors.neutral : Mat3Colors.neutral[40]!;
     } else if (states.contains(MaterialState.selected)) {
-      return isLightMode ? AtcoColors.primary : AtcoColors.primary[80]!;
+      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
     } else if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? AtcoColors.neutral : AtcoColors.neutral[40]!;
+      return isLightMode ? Mat3Colors.neutral : Mat3Colors.neutral[40]!;
     } else {
-      return isLightMode ? AtcoColors.neutral[30]! : AtcoColors.neutral[90]!;
+      return isLightMode ? Mat3Colors.neutral[30]! : Mat3Colors.neutral[90]!;
     }
   }
 }

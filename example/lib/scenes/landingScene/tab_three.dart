@@ -1,5 +1,5 @@
-import 'package:atco_ui/atco_ui.dart';
-import 'package:example/scenes/landingScene/landing_vm.dart';
+import 'package:material_ui/mat3_ui.dart';
+import 'package:material_ui_eg/scenes/landingScene/landing_vm.dart';
 import 'package:flutter/material.dart';
 
 class TabOthers extends StatelessWidget {
@@ -102,7 +102,7 @@ class TabOthers extends StatelessWidget {
           children: [
             Expanded(child: Text(adaptiveSwitchText, style: Theme.of(context).textTheme.bodySmall)),
             Switch.adaptive(
-                activeColor: AtcoColors.primary,
+                activeColor: Mat3Colors.primary,
                 value: vm.switchValue,
                 onChanged: (bool newValue) {
                   vm.updateSwitch(newValue);

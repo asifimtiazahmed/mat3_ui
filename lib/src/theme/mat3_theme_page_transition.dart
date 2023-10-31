@@ -1,8 +1,8 @@
-import 'package:atco_ui/src/pageTransition/no_transitions_builder.dart';
+import 'package:material_ui/src/pageTransition/no_transitions_builder.dart';
 import 'package:flutter/material.dart';
 
 /// App Page Transition Theme
-class AtcoPageTransition {
+class Mat3PageTransition {
   /// No Transition if the platform is Web otherwise use default page transitions
   /// for iOS and Android platforms.
   static PageTransitionsTheme pageTransitionTheme = PageTransitionsTheme(

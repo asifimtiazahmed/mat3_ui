@@ -1,4 +1,4 @@
-import 'package:atco_ui/atco_ui.dart';
+import 'package:material_ui/mat3_ui.dart';
 import 'package:flutter/material.dart';
 
 class NotificationScene extends StatelessWidget {
@@ -16,44 +16,44 @@ class NotificationScene extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: ListView(
           children: [
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.blue1,
+              messageType: Mat3MessageType.blue1,
               onTap: () => ScaffoldMessenger.of(context).showSnackBar(snackBar),
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.blue2,
+              messageType: Mat3MessageType.blue2,
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.grey1,
+              messageType: Mat3MessageType.grey1,
               onTap: () => ScaffoldMessenger.of(context).showSnackBar(snackBar),
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.pink1,
+              messageType: Mat3MessageType.pink1,
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.pink2,
+              messageType: Mat3MessageType.pink2,
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.green1,
+              messageType: Mat3MessageType.green1,
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a message to be shown to the user',
-              messageType: AtcoMessageType.green2,
+              messageType: Mat3MessageType.green2,
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               message: 'This is a custom message in case need to be different than what we already have.',
-              messageType: AtcoMessageType.custom,
+              messageType: Mat3MessageType.custom,
               backgroundColor: context.isLightTheme ? Colors.cyan : Colors.cyan[900],
               contentColor: context.isLightTheme ? Colors.orange[100] : Colors.orange[100],
               onTap: () => ScaffoldMessenger.of(context).showSnackBar(snackBar),
             ),
-            AtcoMessageView(
+            Mat3MessageView(
               icon: const SizedBox.shrink(),
               content: Row(
                 children: [
@@ -67,7 +67,7 @@ class NotificationScene extends StatelessWidget {
                   ),
                 ],
               ),
-              messageType: AtcoMessageType.green2,
+              messageType: Mat3MessageType.green2,
             ),
           ],
         ),

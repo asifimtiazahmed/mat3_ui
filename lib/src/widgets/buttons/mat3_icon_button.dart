@@ -1,14 +1,14 @@
-import 'package:atco_ui/src/resources/atco_colors.dart';
-import 'package:atco_ui/src/utils/extension_context.dart';
+import 'package:material_ui/src/resources/mat3_colors.dart';
+import 'package:material_ui/src/utils/extension_context.dart';
 import 'package:flutter/material.dart';
 
 /// AppIconButton is the implementation of IconButton in order to
 /// respond to theme changes automatically.
-class AtcoIconButton extends StatelessWidget {
+class Mat3IconButton extends StatelessWidget {
   /// Constructor
-  const AtcoIconButton({
+  const Mat3IconButton({
     super.key,
-    this.backgroundColor = AtcoColors.transparent,
+    this.backgroundColor = Mat3Colors.transparent,
     required this.icon,
     this.onPressed,
   });
@@ -30,7 +30,7 @@ class AtcoIconButton extends StatelessWidget {
         shape: const CircleBorder(),
       ),
       child: IconButton(
-        color: context.isLightTheme ?  AtcoColors.neutral[10]: AtcoColors.neutral[90],
+        color: context.isLightTheme ?  Mat3Colors.neutral[10]: Mat3Colors.neutral[90],
         icon: icon,
         onPressed: onPressed,
       ),
