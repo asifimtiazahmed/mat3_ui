@@ -78,9 +78,9 @@ class Mat3MessageView extends StatelessWidget {
     switch (messageType) {
       case Mat3MessageType.blue1:
       case Mat3MessageType.blue2:
-        return isLightTheme ? Mat3Colors.primary[95]! : Mat3Colors.primary[80]!;
+        return isLightTheme ? Mat3Colors.jonquil[95]! : Mat3Colors.jonquil[80]!;
       case Mat3MessageType.grey1:
-        return isLightTheme ? Mat3Colors.neutral[95]! : Mat3Colors.neutralDM[95]!;
+        return isLightTheme ? Mat3Colors.seaGreen[95]! : Mat3Colors.linen[95]!;
       case Mat3MessageType.pink1:
       case Mat3MessageType.pink2:
         return isLightTheme ? Mat3Colors.error[95]! : Mat3Colors.error[50]!;
@@ -95,17 +95,17 @@ class Mat3MessageView extends StatelessWidget {
   Color _getContentColor(bool isLightTheme) {
     switch (messageType) {
       case Mat3MessageType.blue1:
-        return isLightTheme ? Mat3Colors.neutral[10]! : Mat3Colors.black;
+        return isLightTheme ? Mat3Colors.seaGreen[10]! : Mat3Colors.black;
       case Mat3MessageType.blue2:
-        return isLightTheme ? Mat3Colors.primary : Mat3Colors.black;
+        return isLightTheme ? Mat3Colors.jonquil : Mat3Colors.black;
       case Mat3MessageType.grey1:
-        return isLightTheme ? Mat3Colors.neutral[10]! : Mat3Colors.white;
+        return isLightTheme ? Mat3Colors.seaGreen[10]! : Mat3Colors.white;
       case Mat3MessageType.pink1:
-        return isLightTheme ? Mat3Colors.neutral[10]! : Mat3Colors.black;
+        return isLightTheme ? Mat3Colors.seaGreen[10]! : Mat3Colors.black;
       case Mat3MessageType.pink2:
         return isLightTheme ? Mat3Colors.error : Mat3Colors.black;
       case Mat3MessageType.green1:
-        return isLightTheme ? Mat3Colors.neutral[10]! : Mat3Colors.black;
+        return isLightTheme ? Mat3Colors.seaGreen[10]! : Mat3Colors.black;
       case Mat3MessageType.green2:
         return isLightTheme ? Mat3Colors.tertiary2[30]! : Mat3Colors.black;
       case Mat3MessageType.custom:

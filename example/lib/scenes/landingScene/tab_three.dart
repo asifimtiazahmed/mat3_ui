@@ -102,7 +102,7 @@ class TabOthers extends StatelessWidget {
           children: [
             Expanded(child: Text(adaptiveSwitchText, style: Theme.of(context).textTheme.bodySmall)),
             Switch.adaptive(
-                activeColor: Mat3Colors.primary,
+                activeColor: Mat3Colors.jonquil,
                 value: vm.switchValue,
                 onChanged: (bool newValue) {
                   vm.updateSwitch(newValue);

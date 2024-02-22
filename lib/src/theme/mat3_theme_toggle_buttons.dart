@@ -8,28 +8,28 @@ class Mat3ToggleButtonsTheme {
   /// Light theme configuration
   static final ToggleButtonsThemeData lightTheme = ToggleButtonsThemeData(
       textStyle: Mat3ThemeText.lightTheme.labelMedium,
-      color: Mat3Colors.neutral[30],
-      borderColor: Mat3Colors.neutral,
-      disabledColor: Mat3Colors.neutral[80],
-      disabledBorderColor: Mat3Colors.neutral[80],
-      selectedColor: Mat3Colors.primary,
-      selectedBorderColor: Mat3Colors.primary,
+      color: Mat3Colors.seaGreen[30],
+      borderColor: Mat3Colors.seaGreen,
+      disabledColor: Mat3Colors.seaGreen[80],
+      disabledBorderColor: Mat3Colors.seaGreen[80],
+      selectedColor: Mat3Colors.jonquil,
+      selectedBorderColor: Mat3Colors.jonquil,
       fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, true)),
-      splashColor: Mat3Colors.primary[80],
+      splashColor: Mat3Colors.jonquil[80],
       borderRadius: BorderRadius.zero,
   );
 
   /// Dark theme configuration
   static final ToggleButtonsThemeData darkTheme = ToggleButtonsThemeData(
     textStyle: Mat3ThemeText.darkTheme.labelMedium,
-    color: Mat3Colors.primary[80],
-    borderColor: Mat3Colors.primary[80],
-    disabledColor: Mat3Colors.neutral[40],
-    disabledBorderColor: Mat3Colors.neutral[40],
-    selectedColor: Mat3Colors.primary[80],
-    selectedBorderColor: Mat3Colors.primary[80],
+    color: Mat3Colors.jonquil[80],
+    borderColor: Mat3Colors.jonquil[80],
+    disabledColor: Mat3Colors.seaGreen[40],
+    disabledBorderColor: Mat3Colors.seaGreen[40],
+    selectedColor: Mat3Colors.jonquil[80],
+    selectedBorderColor: Mat3Colors.jonquil[80],
     fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, false)),
-    splashColor: Mat3Colors.neutral[80],
+    splashColor: Mat3Colors.seaGreen[80],
     borderRadius: BorderRadius.zero,
   );
 
@@ -37,11 +37,11 @@ class Mat3ToggleButtonsTheme {
     if (states.contains(MaterialState.disabled)) {
       return Mat3Colors.transparent;
     } else if (states.contains(MaterialState.selected) || states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary[95]! : Mat3Colors.primary[10]!;
+      return isLightMode ? Mat3Colors.jonquil[95]! : Mat3Colors.jonquil[10]!;
     } else if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[20]!;
+      return isLightMode ? Mat3Colors.jonquil[90]! : Mat3Colors.jonquil[20]!;
     } else {
-      return isLightMode ? Mat3Colors.neutral[95]! : Mat3Colors.neutralDM[30]!;
+      return isLightMode ? Mat3Colors.seaGreen[95]! : Mat3Colors.linen[30]!;
     }
   }
 }

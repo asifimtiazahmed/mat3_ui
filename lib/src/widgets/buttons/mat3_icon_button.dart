@@ -30,7 +30,7 @@ class Mat3IconButton extends StatelessWidget {
         shape: const CircleBorder(),
       ),
       child: IconButton(
-        color: context.isLightTheme ?  Mat3Colors.neutral[10]: Mat3Colors.neutral[90],
+        color: context.isLightTheme ?  Mat3Colors.seaGreen[10]: Mat3Colors.seaGreen[90],
         icon: icon,
         onPressed: onPressed,
       ),

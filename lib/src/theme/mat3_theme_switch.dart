@@ -18,25 +18,25 @@ class Mat3SwitchTheme {
 
   static Color _getTrackColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.selected) && states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.primary[95]! : Mat3Colors.primary[90]!;
+      return isLightMode ? Mat3Colors.jonquil[95]! : Mat3Colors.jonquil[90]!;
     } else if (states.contains(MaterialState.selected)) {
-      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[30]!;
+      return isLightMode ? Mat3Colors.jonquil[90]! : Mat3Colors.jonquil[30]!;
     } else if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[70]! : Mat3Colors.neutral[20]!;
+      return isLightMode ? Mat3Colors.seaGreen[70]! : Mat3Colors.seaGreen[20]!;
     } else {
-      return isLightMode ? Mat3Colors.neutral : Mat3Colors.neutral[30]!;
+      return isLightMode ? Mat3Colors.seaGreen : Mat3Colors.seaGreen[30]!;
     }
   }
 
   static Color _getThumpColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.selected) && states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.primary[80]! : Mat3Colors.primary[70]!;
+      return isLightMode ? Mat3Colors.jonquil[80]! : Mat3Colors.jonquil[70]!;
     } else if (states.contains(MaterialState.selected)) {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[90]!;
+      return isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[90]!;
     } else if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[90]! : Mat3Colors.neutral[40]!;
+      return isLightMode ? Mat3Colors.seaGreen[90]! : Mat3Colors.seaGreen[40]!;
     } else {
-      return isLightMode ? Mat3Colors.white : Mat3Colors.neutral[90]!;
+      return isLightMode ? Mat3Colors.white : Mat3Colors.seaGreen[90]!;
     }
   }
 }

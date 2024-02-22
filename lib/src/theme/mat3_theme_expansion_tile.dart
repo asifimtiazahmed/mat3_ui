@@ -6,13 +6,13 @@ class Mat3ThemeExpansionTile {
 
   /// Light theme configuration
   static const ExpansionTileThemeData lightTheme = ExpansionTileThemeData(
-    backgroundColor: Mat3Colors.neutral,
+    backgroundColor: Mat3Colors.seaGreen,
     textColor: Mat3Colors.black,
   );
 
   /// Dark theme configuration
   static final ExpansionTileThemeData darkTheme = lightTheme.copyWith(
-    backgroundColor: Mat3Colors.neutralDM,
-    textColor: Mat3Colors.neutral[80],
+    backgroundColor: Mat3Colors.linen,
+    textColor: Mat3Colors.seaGreen[80],
   );
 }

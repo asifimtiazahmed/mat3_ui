@@ -7,16 +7,16 @@ class Mat3ThemeBottomNavBar {
   /// Light theme configuration
   static final BottomNavigationBarThemeData lightTheme = BottomNavigationBarThemeData(
     backgroundColor: Mat3Colors.white,
-    selectedItemColor: Mat3Colors.primary,
-    unselectedItemColor: Mat3Colors.neutral[10],
+    selectedItemColor: Mat3Colors.jonquil,
+    unselectedItemColor: Mat3Colors.seaGreen[10],
     showUnselectedLabels: true,
     type: BottomNavigationBarType.fixed,
   );
 
   /// Dark theme configuration
   static final BottomNavigationBarThemeData darkTheme = lightTheme.copyWith(
-    backgroundColor: Mat3Colors.neutralDM[80],
-    selectedItemColor: Mat3Colors.primary[80],
+    backgroundColor: Mat3Colors.linen[80],
+    selectedItemColor: Mat3Colors.jonquil[80],
     unselectedItemColor: Mat3Colors.white,
   );
 }

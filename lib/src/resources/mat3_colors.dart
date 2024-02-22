@@ -8,20 +8,20 @@ import 'package:flutter/material.dart';
 /// 1) https://www.figma.com/file/3vTg9unqtwvXm30r4Dl3Ba/IDES-Design-System?node-id=8288%3A225882
 ///
 class Mat3Colors {
-  static const MaterialColor night = neutral;
-  static const MaterialColor neutral = MaterialColor(0xFF919191, neutralColors);
+  static const MaterialColor greenNight = seaGreen;
+  static const MaterialColor seaGreen = MaterialColor(0xFF00916E, seaGreenColors);
 
-  static const MaterialColor charcoal = neutralDM; // Dark Mode
-  static const MaterialColor neutralDM = MaterialColor(0xFF272727, neutralDMColors);
+  static const MaterialColor lightBeige = linen; // Dark Mode
+  static const MaterialColor linen = MaterialColor(0xFFFEEFE5, linenColors);
 
-  static const MaterialColor sky = primary;
-  static const MaterialColor primary = MaterialColor(0xFF0057B8, primaryColors);
+  static const MaterialColor yellowish = jonquil;
+  static const MaterialColor jonquil = MaterialColor(0xFFFFCF00, jonquilColors);
 
-  static const MaterialColor sun = secondary;
-  static const MaterialColor secondary = MaterialColor(0xFFF2A900, secondaryColors);
+  static const MaterialColor orangeish = persimmon;
+  static const MaterialColor persimmon = MaterialColor(0xFFEE6123, persimmonColors);
 
-  static const MaterialColor midnight = tertiary1;
-  static const MaterialColor tertiary1 = MaterialColor(0xFF152D54, tertiary1Colors);
+  static const MaterialColor redder = munsell;
+  static const MaterialColor munsell = MaterialColor(0xFF152D54, redColors);
 
   static const MaterialColor ocean = tertiary2;
   static const MaterialColor tertiary2 = MaterialColor(0xFF0A8289, tertiary2Colors);
@@ -39,7 +39,7 @@ class Mat3Colors {
   static const MaterialColor error = MaterialColor(0xFFC3003B, errorColors);
 
   static const MaterialColor coral = errorDM; // Dark Mode
-  static const MaterialColor errorDM = MaterialColor(0xFFFF6E6E, neutralDMColors);
+  static const MaterialColor errorDM = MaterialColor(0xFFFF6E6E, linenColors);
 
   static const Color black = Colors.black;
   static const Color white = Colors.white;
@@ -52,41 +52,41 @@ class Mat3Colors {
 }
 
 /// night
-const Map<int, Color> neutralColors = {
-  0: Color(0xFF000000),
-  10: Color(0xFF2B2B2B),
-  20: Color(0xFF494949),
-  30: Color(0xFF636366),
-  40: Color(0xFF666666),
-  50: Color(0xFF919191),
-  60: Color(0xFFA7A7A7),
-  70: Color(0xFFB2B2B2),
-  80: Color(0xFFC8C8C8),
-  90: Color(0xFFE3E3E3),
-  95: Color(0xFFF4F4F4),
-  99: Color(0xFFFAFAFA),
+const Map<int, Color> seaGreenColors = {
+  0: Color(0xFF003d2f),
+  10: Color(0xFF00523f),
+  20: Color(0xFF007a5e),
+  30: Color(0xFF00916E),
+  40: Color(0xFF00A37D),
+  50: Color(0xFF00A37D),
+  60: Color(0xFF00B88D),
+  70: Color(0xFF00CC9C),
+  80: Color(0xFF00E0AC),
+  90: Color(0xFF00E0AC),
+  95: Color(0xFF00F5BC),
+  99: Color(0xFF0AFFC6),
   100: Color(0xFFFFFFFF),
 };
 
 /// charcoal
-const Map<int, Color> neutralDMColors = {
-  0: Color(0xFF000000),
-  10: Color(0xFF121212),
-  20: Color(0xFF1E1E1E),
-  30: Color(0xFF232323),
-  40: Color(0xFF252525),
-  50: Color(0xFF272727),
-  60: Color(0xFF2C2C2C),
-  70: Color(0xFF2E2E2E),
-  80: Color(0xFF333333),
-  90: Color(0xFF383838),
-  95: Color(0xFF3D3D3D),
-  99: Color(0xFF464646),
+const Map<int, Color> linenColors = {
+  0: Color(0xFF271101),
+  10: Color(0xFF4f2103),
+  20: Color(0xFF622a04),
+  30: Color(0xFF9D4206),
+  40: Color(0xFFc55307),
+  50: Color(0xFFec6409),
+  60: Color(0xFFF77A26),
+  70: Color(0xFFF9924E),
+  80: Color(0xFFFAAA75),
+  90: Color(0xFFFBC39D),
+  95: Color(0xFFfddbc4),
+  99: Color(0xFFfeefe5),
   100: Color(0xFFFFFFFF),
 };
 
 /// sky
-const Map<int, Color> primaryColors = {
+const Map<int, Color> jonquilColors = {
   0: Color(0xFF000000),
   10: Color(0xFF001A37),
   20: Color(0xFF002B5C),
@@ -103,7 +103,7 @@ const Map<int, Color> primaryColors = {
 };
 
 /// sun
-const Map<int, Color> secondaryColors = {
+const Map<int, Color> persimmonColors = {
   0: Color(0xFF000000),
   10: Color(0xFF493300),
   20: Color(0xFF795500),
@@ -120,7 +120,7 @@ const Map<int, Color> secondaryColors = {
 };
 
 /// midnight
-const Map<int, Color> tertiary1Colors = {
+const Map<int, Color> redColors = {
   0: Color(0xFF000000),
   10: Color(0xFF060D19),
   20: Color(0xFF0A172A),

@@ -7,7 +7,7 @@ class Mat3DividerTheme {
 
   /// Light theme configuration
   static DividerThemeData lightTheme = DividerThemeData(
-    color: Mat3Colors.neutral[80],
+    color: Mat3Colors.seaGreen[80],
     space: 0,
     thickness: 1,
     indent: 0,
@@ -15,5 +15,5 @@ class Mat3DividerTheme {
   );
 
   /// Dark theme configuration
-  static DividerThemeData darkTheme = lightTheme.copyWith(color: Mat3Colors.neutral);
+  static DividerThemeData darkTheme = lightTheme.copyWith(color: Mat3Colors.seaGreen);
 }

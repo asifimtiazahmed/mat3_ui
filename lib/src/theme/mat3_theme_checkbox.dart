@@ -18,9 +18,9 @@ class Mat3CheckboxTheme {
 
   static Color _getFillColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[50]! : Mat3Colors.neutral[40]!;
+      return isLightMode ? Mat3Colors.seaGreen[50]! : Mat3Colors.seaGreen[40]!;
     } else {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
+      return isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[80]!;
     }
   }
 

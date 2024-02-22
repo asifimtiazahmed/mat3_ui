@@ -31,14 +31,14 @@ class Mat3ElevatedButtonTheme {
 
   static Color _getBackgroundColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[90]! : Mat3Colors.neutral[20]!;
+      return isLightMode ? Mat3Colors.seaGreen[90]! : Mat3Colors.seaGreen[20]!;
     }
-    return Mat3Colors.primary;
+    return Mat3Colors.jonquil;
   }
 
   static Color _getForegroundColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[40]! : Mat3Colors.neutral[60]!;
+      return isLightMode ? Mat3Colors.seaGreen[40]! : Mat3Colors.seaGreen[60]!;
     } else {
       return Mat3Colors.white;
     }
@@ -46,13 +46,13 @@ class Mat3ElevatedButtonTheme {
 
   static Color _getOverlayColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[80]! : Mat3Colors.neutral[20]!;
+      return isLightMode ? Mat3Colors.seaGreen[80]! : Mat3Colors.seaGreen[20]!;
     } else if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return isLightMode ? Mat3Colors.primary[40]! : Mat3Colors.primary[30]!;
+      return isLightMode ? Mat3Colors.jonquil[40]! : Mat3Colors.jonquil[30]!;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary[30]! : Mat3Colors.primary;
+      return isLightMode ? Mat3Colors.jonquil[30]! : Mat3Colors.jonquil;
     } else {
-      return Mat3Colors.primary;
+      return Mat3Colors.jonquil;
     }
   }
 

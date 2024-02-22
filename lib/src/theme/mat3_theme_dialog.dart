@@ -8,7 +8,7 @@ class Mat3DialogTheme {
   /// Light theme configuration
   static final DialogTheme lightTheme = DialogTheme(
     surfaceTintColor: Colors.transparent,
-    backgroundColor: Mat3Colors.neutral[99],
+    backgroundColor: Mat3Colors.seaGreen[99],
     titleTextStyle: Mat3ThemeText.lightTheme.titleLarge,
     contentTextStyle: Mat3ThemeText.lightTheme.bodySmall,
     shape: rectWithRadius4,
@@ -17,7 +17,7 @@ class Mat3DialogTheme {
   /// Dark theme configuration
   static final DialogTheme darkTheme = lightTheme.copyWith(
     surfaceTintColor: Colors.transparent,
-    backgroundColor: Mat3Colors.neutralDM[30],
+    backgroundColor: Mat3Colors.linen[30],
     titleTextStyle: Mat3ThemeText.lightTheme.titleLarge,
     contentTextStyle: Mat3ThemeText.lightTheme.bodySmall,
     shape: rectWithRadius4,

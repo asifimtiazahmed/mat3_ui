@@ -14,7 +14,7 @@ class AtcoLoading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final loadingColor = context.isLightTheme ? Mat3Colors.primary : Mat3Colors.primary[80];
+    final loadingColor = context.isLightTheme ? Mat3Colors.jonquil : Mat3Colors.jonquil[80];
 
     return Row(
       children: [

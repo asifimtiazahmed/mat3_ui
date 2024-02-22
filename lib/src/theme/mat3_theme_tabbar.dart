@@ -8,7 +8,7 @@ class Mat3ThemeTabBar {
   /// Light theme configuration
   static final TabBarTheme lightTheme = TabBarTheme(
     labelColor: Mat3Colors.white,
-    unselectedLabelColor: Mat3Colors.neutral[80],
+    unselectedLabelColor: Mat3Colors.seaGreen[80],
     labelStyle: Mat3ThemeText.lightTheme.titleLarge,
     unselectedLabelStyle: Mat3ThemeText.lightTheme.titleMedium,
     indicator: _getDecoration(),
@@ -17,7 +17,7 @@ class Mat3ThemeTabBar {
   /// Dark theme configuration
   static final TabBarTheme darkTheme = TabBarTheme(
     labelColor: Mat3Colors.white,
-    unselectedLabelColor: Mat3Colors.neutral[60],
+    unselectedLabelColor: Mat3Colors.seaGreen[60],
     labelStyle: Mat3ThemeText.darkTheme.titleLarge,
     unselectedLabelStyle: Mat3ThemeText.darkTheme.titleMedium,
     indicator: _getDecoration(),
@@ -27,7 +27,7 @@ class Mat3ThemeTabBar {
     return BoxDecoration(
       border: Border(
         bottom: BorderSide(
-          color: Mat3Colors.secondary[80]!,
+          color: Mat3Colors.persimmon[80]!,
           width: 4,
         ),
       ),

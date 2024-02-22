@@ -31,7 +31,7 @@ class ActionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bgColor = backgroundColor ?? (context.isLightTheme ? Mat3Colors.neutral[95] : Mat3Colors.neutralDM[95]);
+    final bgColor = backgroundColor ?? (context.isLightTheme ? Mat3Colors.seaGreen[95] : Mat3Colors.linen[95]);
 
     return Card(
       color: bgColor,

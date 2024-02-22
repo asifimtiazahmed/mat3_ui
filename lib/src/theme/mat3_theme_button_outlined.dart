@@ -33,18 +33,18 @@ class Mat3OutlinedButtonTheme {
 
   static BorderSide _getBorderSide(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? const BorderSide(color: Mat3Colors.neutral) : BorderSide(color: Mat3Colors.neutral[40]!);
+      return isLightMode ? const BorderSide(color: Mat3Colors.seaGreen) : BorderSide(color: Mat3Colors.seaGreen[40]!);
     }
-    return isLightMode ? const BorderSide(color: Mat3Colors.primary) : BorderSide(color: Mat3Colors.primary[80]!);
+    return isLightMode ? const BorderSide(color: Mat3Colors.jonquil) : BorderSide(color: Mat3Colors.jonquil[80]!);
   }
 
   static Color _getBackgroundColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
       return Mat3Colors.transparent;
     } else if (states.contains(MaterialState.hovered)) {
-      return Mat3Colors.primary[95]!;
+      return Mat3Colors.jonquil[95]!;
     } else if (states.contains(MaterialState.focused)) {
-      return Mat3Colors.primary[90]!;
+      return Mat3Colors.jonquil[90]!;
     } else if (states.contains(MaterialState.pressed)) {
       return Mat3Colors.transparent;
     } else {
@@ -54,23 +54,23 @@ class Mat3OutlinedButtonTheme {
 
   static Color _getForegroundColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[50]! : Mat3Colors.neutral[40]!;
+      return isLightMode ? Mat3Colors.seaGreen[50]! : Mat3Colors.seaGreen[40]!;
     } else if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return Mat3Colors.primary[50]!;
+      return Mat3Colors.jonquil[50]!;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
+      return isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[80]!;
     } else {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
+      return isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[80]!;
     }
   }
 
   static Color _getOverlayColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return Mat3Colors.primary[90]!;
+      return Mat3Colors.jonquil[90]!;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[70]!;
+      return isLightMode ? Mat3Colors.jonquil[90]! : Mat3Colors.jonquil[70]!;
     } else {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[90]!;
+      return isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[90]!;
     }
   }
 

@@ -11,17 +11,17 @@ class Mat3InputDecoration {
     filled: true,
     fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, true)),
     border: const UnderlineInputBorder(),
-    labelStyle: Mat3ThemeText.lightTheme.titleMedium?.copyWith(color: Mat3Colors.neutral),
+    labelStyle: Mat3ThemeText.lightTheme.titleMedium?.copyWith(color: Mat3Colors.seaGreen),
     floatingLabelStyle: MaterialStateTextStyle.resolveWith((states) => _getFloatingLabelColor(states, true)),
-    helperStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.neutral),
-    hintStyle: Mat3ThemeText.lightTheme.titleMedium?.copyWith(color: Mat3Colors.neutral),
+    helperStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.seaGreen),
+    hintStyle: Mat3ThemeText.lightTheme.titleMedium?.copyWith(color: Mat3Colors.seaGreen),
     errorStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.error),
-    counterStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.neutral),
+    counterStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.seaGreen),
     iconColor: MaterialStateColor.resolveWith((states) => _getIconColor(states, true)),
-    enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.neutral)),
+    enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.seaGreen)),
     errorBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.error)),
-    focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.primary)),
-    disabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.neutral[20]!)),
+    focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.jonquil)),
+    disabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.seaGreen[20]!)),
   );
 
   /// Dark theme configuration
@@ -29,24 +29,24 @@ class Mat3InputDecoration {
     filled: true,
     fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, false)),
     border: const UnderlineInputBorder(),
-    labelStyle: Mat3ThemeText.darkTheme.titleMedium?.copyWith(color: Mat3Colors.neutral[70]),
+    labelStyle: Mat3ThemeText.darkTheme.titleMedium?.copyWith(color: Mat3Colors.seaGreen[70]),
     floatingLabelStyle: MaterialStateTextStyle.resolveWith((states) => _getFloatingLabelColor(states, false)),
-    helperStyle: Mat3ThemeText.darkTheme.labelMedium?.copyWith(color: Mat3Colors.neutral[70]),
-    hintStyle: Mat3ThemeText.darkTheme.titleMedium?.copyWith(color: Mat3Colors.neutral[80]),
+    helperStyle: Mat3ThemeText.darkTheme.labelMedium?.copyWith(color: Mat3Colors.seaGreen[70]),
+    hintStyle: Mat3ThemeText.darkTheme.titleMedium?.copyWith(color: Mat3Colors.seaGreen[80]),
     errorStyle: Mat3ThemeText.lightTheme.labelMedium?.copyWith(color: Mat3Colors.errorDM),
-    counterStyle: Mat3ThemeText.darkTheme.labelMedium?.copyWith(color: Mat3Colors.neutral[70]),
+    counterStyle: Mat3ThemeText.darkTheme.labelMedium?.copyWith(color: Mat3Colors.seaGreen[70]),
     iconColor: MaterialStateColor.resolveWith((states) => _getIconColor(states, false)),
-    enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.neutral)),
+    enabledBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.seaGreen)),
     errorBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.error)),
-    focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.primary[80]!)),
-    disabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.neutral[99]!)),
+    focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.jonquil[80]!)),
+    disabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Mat3Colors.seaGreen[99]!)),
   );
 
   static Color _getFillColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[90]! : Mat3Colors.neutralDM[90]!;
+      return isLightMode ? Mat3Colors.seaGreen[90]! : Mat3Colors.linen[90]!;
     } else if (states.contains(MaterialState.hovered)) {
-      return isLightMode ? Mat3Colors.neutral[95]! : Mat3Colors.neutralDM[99]!;
+      return isLightMode ? Mat3Colors.seaGreen[95]! : Mat3Colors.linen[99]!;
     } else {
       return Mat3Colors.transparent;
     }
@@ -57,18 +57,18 @@ class Mat3InputDecoration {
       return Mat3ThemeText.lightTheme.labelSmall!.copyWith(color: isLightMode ? Mat3Colors.error : Mat3Colors.errorDM);
     } else if (states.contains(MaterialState.focused)) {
       return Mat3ThemeText.lightTheme.labelSmall!.copyWith(
-        color: isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!,
+        color: isLightMode ? Mat3Colors.jonquil : Mat3Colors.jonquil[80]!,
       );
     }
     return Mat3ThemeText.lightTheme.labelSmall!.copyWith(
-      color: isLightMode ? Mat3Colors.neutral : Mat3Colors.neutral[70]!,
+      color: isLightMode ? Mat3Colors.seaGreen : Mat3Colors.seaGreen[70]!,
     );
   }
 
   static Color _getIconColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral : Mat3Colors.neutralDM[60]!;
+      return isLightMode ? Mat3Colors.seaGreen : Mat3Colors.linen[60]!;
     }
-    return isLightMode ? Mat3Colors.neutral[10]! : Mat3Colors.neutral[90]!;
+    return isLightMode ? Mat3Colors.seaGreen[10]! : Mat3Colors.seaGreen[90]!;
   }
 }
