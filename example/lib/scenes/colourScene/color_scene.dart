@@ -4,16 +4,16 @@ import 'package:flutter/material.dart';
 
 class ColourScene extends StatelessWidget {
   final List<ColourItem> colors = [
-    ColourItem(1, 'Neutral (Night)', neutralColors),
-    ColourItem(2, 'Neutral Dark Mode (Charcoal)', neutralDMColors),
-    ColourItem(3, 'Primary (Sky)', primaryColors),
-    ColourItem(4, 'Secondary (Sun)', secondaryColors),
-    ColourItem(5, 'Tertiary 1 (Midnight)', tertiary1Colors),
+    ColourItem(1, 'Rose Quartz', roseQuartzColors),
+    ColourItem(2, 'Lavender Web', lavenderWebColors),
+    ColourItem(3, 'Primary (Dark Sky)', spaceCadetColors),
+    ColourItem(4, 'Secondary (Sun)', davysGrayColors),
+    ColourItem(5, 'Tertiary 1 (Midnight)', platinumColors),
     ColourItem(6, 'Tertiary 2 (Ocean)', tertiary2Colors),
     ColourItem(7, 'Tertiary 3 (Pumpkin)', tertiary3Colors),
     ColourItem(8, 'Tertiary 4 (Eggplant)', tertiary4Colors),
-    ColourItem(9, 'Success (Pine)', successColors),
-    ColourItem(10, 'Error (Cherry)', errorColors),
+    ColourItem(9, 'Success (Pine)', mistyRoseColors),
+    ColourItem(10, 'Error (Crayola)', brightPinkColors),
     ColourItem(11, 'Error Dark Mode (Coral)', errorDMColors),
   ];
 

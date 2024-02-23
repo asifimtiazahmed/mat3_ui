@@ -8,23 +8,23 @@ import 'package:flutter/material.dart';
 /// 1) https://www.figma.com/file/3vTg9unqtwvXm30r4Dl3Ba/IDES-Design-System?node-id=8288%3A225882
 ///
 class Mat3Colors {
-  static const MaterialColor night = neutral;
-  static const MaterialColor neutral = MaterialColor(0xFF919191, neutralColors);
+  static const MaterialColor roseQuartz = neutral;
+  static const MaterialColor neutral = MaterialColor(0xFFACA3AF, roseQuartzColors);
 
-  static const MaterialColor charcoal = neutralDM; // Dark Mode
-  static const MaterialColor neutralDM = MaterialColor(0xFF272727, neutralDMColors);
+  static const MaterialColor lavenderWeb = neutralDM; // Dark Mode
+  static const MaterialColor neutralDM = MaterialColor(0xFFD3D2E7, lavenderWebColors);
 
-  static const MaterialColor sky = primary;
-  static const MaterialColor primary = MaterialColor(0xFF0057B8, primaryColors);
+  static const MaterialColor spaceCadet = primary;
+  static const MaterialColor primary = MaterialColor(0xFF383950, spaceCadetColors);
 
-  static const MaterialColor sun = secondary;
-  static const MaterialColor secondary = MaterialColor(0xFFF2A900, secondaryColors);
+  static const MaterialColor davysGray = secondary;
+  static const MaterialColor secondary = MaterialColor(0xFF565264, davysGrayColors);
 
-  static const MaterialColor midnight = tertiary1;
-  static const MaterialColor tertiary1 = MaterialColor(0xFF152D54, tertiary1Colors);
+  static const MaterialColor mistyRose = tertiary1;
+  static const MaterialColor tertiary1 = MaterialColor(0xFFF2DFDC, mistyRoseColors);
 
-  static const MaterialColor ocean = tertiary2;
-  static const MaterialColor tertiary2 = MaterialColor(0xFF0A8289, tertiary2Colors);
+  static const MaterialColor nightSky = tertiary2;
+  static const MaterialColor tertiary2 = MaterialColor(0xFF075B60, tertiary2Colors);
 
   static const MaterialColor pumpkin = tertiary3;
   static const MaterialColor tertiary3 = MaterialColor(0xFFC94D21, tertiary3Colors);
@@ -32,14 +32,14 @@ class Mat3Colors {
   static const MaterialColor eggplant = tertiary4;
   static const MaterialColor tertiary4 = MaterialColor(0xFF8F659D, tertiary4Colors);
 
-  static const MaterialColor pine = success;
-  static const MaterialColor success = MaterialColor(0xFF026A4D, successColors);
+  static const MaterialColor platinum = success;
+  static const MaterialColor success = MaterialColor(0xFFD9D9D9, platinumColors);
 
-  static const MaterialColor cherry = error;
-  static const MaterialColor error = MaterialColor(0xFFC3003B, errorColors);
+  static const MaterialColor brightPink = error;
+  static const MaterialColor error = MaterialColor(0xFFEE4B6A, brightPinkColors);
 
   static const MaterialColor coral = errorDM; // Dark Mode
-  static const MaterialColor errorDM = MaterialColor(0xFFFF6E6E, neutralDMColors);
+  static const MaterialColor errorDM = MaterialColor(0xFFFF6E6E, lavenderWebColors);
 
   static const Color black = Colors.black;
   static const Color white = Colors.white;
@@ -52,88 +52,88 @@ class Mat3Colors {
 }
 
 /// night
-const Map<int, Color> neutralColors = {
+const Map<int, Color> roseQuartzColors = {
   0: Color(0xFF000000),
-  10: Color(0xFF2B2B2B),
-  20: Color(0xFF494949),
-  30: Color(0xFF636366),
-  40: Color(0xFF666666),
-  50: Color(0xFF919191),
-  60: Color(0xFFA7A7A7),
-  70: Color(0xFFB2B2B2),
-  80: Color(0xFFC8C8C8),
-  90: Color(0xFFE3E3E3),
-  95: Color(0xFFF4F4F4),
-  99: Color(0xFFFAFAFA),
+  10: Color(0xFF201C21),
+  20: Color(0xFF352F37),
+  30: Color(0xFF4A424C),
+  40: Color(0xFF5F5562),
+  50: Color(0xFF746878),
+  60: Color(0xFF897c8d),
+  70: Color(0xFF9d92a0),
+  80: Color(0xFFACA3AF),
+  90: Color(0xFFc4bec6),
+  95: Color(0xFFd8d3d9),
+  99: Color(0xFFebe9ec),
   100: Color(0xFFFFFFFF),
 };
 
 /// charcoal
-const Map<int, Color> neutralDMColors = {
+const Map<int, Color> lavenderWebColors = {
   0: Color(0xFF000000),
-  10: Color(0xFF121212),
-  20: Color(0xFF1E1E1E),
-  30: Color(0xFF232323),
-  40: Color(0xFF252525),
-  50: Color(0xFF272727),
-  60: Color(0xFF2C2C2C),
-  70: Color(0xFF2E2E2E),
-  80: Color(0xFF333333),
-  90: Color(0xFF383838),
-  95: Color(0xFF3D3D3D),
-  99: Color(0xFF464646),
-  100: Color(0xFFFFFFFF),
+  10: Color(0xFF0f0e1b),
+  20: Color(0xFF1e1d35),
+  30: Color(0xFF2d2b50),
+  40: Color(0xFF3c396a),
+  50: Color(0xFF4a4785),
+  60: Color(0xFF59569f),
+  70: Color(0xFF716db0),
+  80: Color(0xFF8a88bf),
+  90: Color(0xFFa4a2cd),
+  95: Color(0xFFb3bddb),
+  99: Color(0xFFd3d2e7),
+  100: Color(0xFFF2F2F8),
 };
 
 /// sky
-const Map<int, Color> primaryColors = {
+const Map<int, Color> spaceCadetColors = {
   0: Color(0xFF000000),
-  10: Color(0xFF001A37),
-  20: Color(0xFF002B5C),
-  30: Color(0xFF003D81),
-  40: Color(0xFF004A9C),
-  50: Color(0xFF0057B8),
-  60: Color(0xFF3379C6),
-  70: Color(0xFF4C89CD),
-  80: Color(0xFF80ABDB),
-  90: Color(0xFFBFD5ED),
-  95: Color(0xFFE5EEF8),
-  99: Color(0xFFF2F7FC),
+  10: Color(0xFF08080c),
+  20: Color(0xFF191924),
+  30: Color(0xFF2a2a3c),
+  40: Color(0xFF383950),
+  50: Color(0xFF4B4C6C),
+  60: Color(0xFF5C5D84),
+  70: Color(0xFF6f709b),
+  80: Color(0xFF8788ab),
+  90: Color(0xFF9fa0bc),
+  95: Color(0xFFb7bbcd),
+  99: Color(0xFFcfcfde),
   100: Color(0xFFFFFFFF),
 };
 
 /// sun
-const Map<int, Color> secondaryColors = {
-  0: Color(0xFF000000),
-  10: Color(0xFF493300),
-  20: Color(0xFF795500),
-  30: Color(0xFFA97600),
-  40: Color(0xFFCE9000),
-  50: Color(0xFFF2A900),
-  60: Color(0xFFF5BA33),
-  70: Color(0xFFF6C34C),
-  80: Color(0xFFF9D480),
-  90: Color(0xFFFCE9BF),
-  95: Color(0xFFFEF6E5),
-  99: Color(0xFFFEFBF2),
-  100: Color(0xFFFFFFFF),
+const Map<int, Color> davysGrayColors = {
+  0: Color(0xFF131216),
+  10: Color(0xFF1d1c22),
+  20: Color(0xFF302e38),
+  30: Color(0xFF43404F),
+  40: Color(0xFF565264),
+  50: Color(0xFF6A657B),
+  60: Color(0xFF7E7891),
+  70: Color(0xFF938fa3),
+  80: Color(0xFFA9A5B6),
+  90: Color(0xFFBEBCC8),
+  95: Color(0xFFD4D2DA),
+  99: Color(0xFFE9E9ED),
+  100: Color(0xFFF4F4F6),
 };
 
 /// midnight
-const Map<int, Color> tertiary1Colors = {
+const Map<int, Color> platinumColors = {
   0: Color(0xFF000000),
-  10: Color(0xFF060D19),
-  20: Color(0xFF0A172A),
-  30: Color(0xFF0F203B),
-  40: Color(0xFF122647),
-  50: Color(0xFF152D54),
-  60: Color(0xFF445776),
-  70: Color(0xFF5B6C87),
-  80: Color(0xFF8A96A9),
-  90: Color(0xFFC4CAD4),
-  95: Color(0xFFE8EAEE),
-  99: Color(0xFFF3F5F7),
-  100: Color(0xFFFFFFFF),
+  10: Color(0xFF141414),
+  20: Color(0xFF292929),
+  30: Color(0xFF3D3D3D),
+  40: Color(0xFF525252),
+  50: Color(0xFF666666),
+  60: Color(0xFF7A7A7A),
+  70: Color(0xFF8F8F8F),
+  80: Color(0xFFA3A3A3),
+  90: Color(0xFFB8B8B8),
+  95: Color(0xFFCCCCCC),
+  99: Color(0xFFD9D9D9),
+  100: Color(0xFFF5F5F5),
 };
 
 /// ocean
@@ -188,7 +188,7 @@ const Map<int, Color> tertiary4Colors = {
 };
 
 /// pine
-const Map<int, Color> successColors = {
+const Map<int, Color> mistyRoseColors = {
   0: Color(0xFF000000),
   10: Color(0xFF012017),
   20: Color(0xFF013527),
@@ -205,20 +205,20 @@ const Map<int, Color> successColors = {
 };
 
 /// cherry
-const Map<int, Color> errorColors = {
+const Map<int, Color> brightPinkColors = {
   0: Color(0xFF000000),
-  10: Color(0xFF3A0012),
-  20: Color(0xFF61001D),
-  30: Color(0xFF890029),
-  40: Color(0xFFA60032),
-  50: Color(0xFFC3003B),
-  60: Color(0xFFCF3362),
-  70: Color(0xFFD54D76),
-  80: Color(0xFFE1809D),
-  90: Color(0xFFF0BFCE),
-  95: Color(0xFFF9E5EB),
-  99: Color(0xFFFCF2F5),
-  100: Color(0xFFFFFFFF),
+  10: Color(0xFF38050f),
+  20: Color(0xFF5d0918),
+  30: Color(0xFF830c22),
+  40: Color(0xFFA8102C),
+  50: Color(0xFFCD1335),
+  60: Color(0xFFEA1F44),
+  70: Color(0xFFEE4463),
+  80: Color(0xFFEE4B6A),
+  90: Color(0xFFF37C92),
+  95: Color(0xFFF6A2B1),
+  99: Color(0xFFFAC7D0),
+  100: Color(0xFFFDECEF),
 };
 
 /// coral
