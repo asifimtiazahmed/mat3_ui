@@ -15,8 +15,8 @@ class Mat3ThemeBottomNavBar {
 
   /// Dark theme configuration
   static final BottomNavigationBarThemeData darkTheme = lightTheme.copyWith(
-    backgroundColor: Mat3Colors.neutralDM[80],
-    selectedItemColor: Mat3Colors.primary[80],
-    unselectedItemColor: Mat3Colors.white,
+    backgroundColor: Mat3Colors.primary[40],
+    selectedItemColor: Mat3Colors.lavenderWeb[100],
+    unselectedItemColor: Mat3Colors.primary[80],
   );
 }

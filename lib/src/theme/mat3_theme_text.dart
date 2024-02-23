@@ -9,7 +9,7 @@ class Mat3ThemeText {
   static final TextTheme lightTheme = TextTheme(
     bodyLarge: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 0.3,
       color: Mat3Colors.neutral[10],
@@ -17,7 +17,7 @@ class Mat3ThemeText {
     ),
     bodyMedium: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 0.15,
       color: Mat3Colors.neutral[10],
@@ -25,7 +25,7 @@ class Mat3ThemeText {
     ),
     bodySmall: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 0.15,
       color: Mat3Colors.neutral[40],
@@ -33,7 +33,7 @@ class Mat3ThemeText {
     ),
     displayLarge: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 1.2,
       color: Mat3Colors.neutral[10],
@@ -41,7 +41,7 @@ class Mat3ThemeText {
     ),
     displayMedium: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 11,
       letterSpacing: 1.2,
       color: Mat3Colors.neutral[10],
@@ -49,7 +49,7 @@ class Mat3ThemeText {
     ),
     displaySmall: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 0.25,
       color: Mat3Colors.primary[50],
@@ -57,7 +57,7 @@ class Mat3ThemeText {
     ),
     headlineLarge: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 34,
       letterSpacing: 0.25,
       color: Mat3Colors.neutral[10],
@@ -65,7 +65,7 @@ class Mat3ThemeText {
     ),
     headlineMedium: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 24,
       letterSpacing: 0,
       color: Mat3Colors.neutral[10],
@@ -73,7 +73,7 @@ class Mat3ThemeText {
     ),
     headlineSmall: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 20,
       letterSpacing: 0,
       color: Mat3Colors.neutral[10],
@@ -81,7 +81,7 @@ class Mat3ThemeText {
     ),
     labelLarge: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 14,
       letterSpacing: 0.1,
       color: Mat3Colors.neutral[10],
@@ -89,7 +89,7 @@ class Mat3ThemeText {
     ),
     labelMedium: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 12,
       letterSpacing: 0.1,
       color: Mat3Colors.neutral[10],
@@ -97,7 +97,7 @@ class Mat3ThemeText {
     ),
     labelSmall: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 12,
       letterSpacing: 0.1,
       color: Mat3Colors.neutral[10],
@@ -105,7 +105,7 @@ class Mat3ThemeText {
     ),
     titleLarge: TextStyle(
       // fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 16,
       letterSpacing: 0.1,
       color: Mat3Colors.neutral[10],
@@ -113,7 +113,7 @@ class Mat3ThemeText {
     ),
     titleMedium: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 16,
       letterSpacing: 0.1,
       color: Mat3Colors.neutral[10],
@@ -121,7 +121,7 @@ class Mat3ThemeText {
     ),
     titleSmall: TextStyle(
       fontFamily: 'Manrope',
-      package: 'atco_ui',
+      package: 'mat3_ui',
       fontSize: 16,
       letterSpacing: 0,
       color: Mat3Colors.neutral[40],

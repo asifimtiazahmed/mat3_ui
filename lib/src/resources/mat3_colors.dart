@@ -48,7 +48,7 @@ class Mat3Colors {
   // static const Color warningBackgroundAndGraphics = Color(0xFFF2A900);
   // static const Color warningBackgroundText = Color(0xFFA97600);
   static const Color bgLightMode = Color(0xFFF4F4F4); // neutral[95]
-  static const Color bgDarkMode = Color(0xFF121212); // neutral DM [10]
+  static Color bgDarkMode = primary[20]!; // neutral DM [10]
 }
 
 /// night

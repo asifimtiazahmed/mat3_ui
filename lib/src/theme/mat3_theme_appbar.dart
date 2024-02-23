@@ -10,14 +10,23 @@ class Mat3ThemeAppBar {
   static final AppBarTheme lightTheme = AppBarTheme(
     backgroundColor: Mat3Colors.primary[50],
     actionsIconTheme: const IconThemeData(color: Mat3Colors.white),
-    iconTheme: const IconThemeData(color: Mat3Colors.error),
+    iconTheme: const IconThemeData(color: Mat3Colors.lavenderWeb),
     titleTextStyle: Mat3ThemeText.lightTheme.titleLarge?.copyWith(
-      color: Mat3Colors.white,
+      color: Mat3Colors.spaceCadet[99],
     ),
     toolbarTextStyle: Mat3ThemeText.lightTheme.titleSmall,
     centerTitle: false,
   );
 
   /// Dark theme configuration
-  static final AppBarTheme darkTheme = lightTheme;
+  static final AppBarTheme darkTheme = AppBarTheme(
+    backgroundColor: Mat3Colors.primary[40],
+    actionsIconTheme: IconThemeData(color: Mat3Colors.platinum[95]),
+    iconTheme: const IconThemeData(color: Mat3Colors.lavenderWeb),
+    titleTextStyle: Mat3ThemeText.lightTheme.titleLarge?.copyWith(
+      color: Mat3Colors.spaceCadet[99],
+    ),
+    toolbarTextStyle: Mat3ThemeText.lightTheme.titleSmall,
+    centerTitle: false,
+  );
 }

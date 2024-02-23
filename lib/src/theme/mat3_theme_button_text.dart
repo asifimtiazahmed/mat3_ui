@@ -33,9 +33,9 @@ class Mat3TextButtonTheme {
     if (states.contains(MaterialState.disabled)) {
       return isLightMode ? Mat3Colors.neutral[50]! : Mat3Colors.neutral[40]!;
     } else if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
-      return isLightMode ? Mat3Colors.primary[20]! : Mat3Colors.primary[95]!;
+      return isLightMode ? Mat3Colors.primary[20]! : Mat3Colors.primary[80]!;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary[30]! : Mat3Colors.primary[80]!;
+      return isLightMode ? Mat3Colors.primary[30]! : Mat3Colors.primary[95]!;
     } else {
       return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
     }
@@ -45,7 +45,7 @@ class Mat3TextButtonTheme {
     if (states.contains(MaterialState.hovered) || states.contains(MaterialState.focused)) {
       return Mat3Colors.transparent;
     } else if (states.contains(MaterialState.pressed)) {
-      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[20]!;
+      return isLightMode ? Mat3Colors.primary[90]! : Mat3Colors.primary[40]!;
     } else {
       return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[90]!;
     }

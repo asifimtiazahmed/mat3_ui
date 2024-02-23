@@ -16,7 +16,7 @@ class Mat3ThemeTabBar {
 
   /// Dark theme configuration
   static final TabBarTheme darkTheme = TabBarTheme(
-    labelColor: Mat3Colors.white,
+    labelColor: Mat3Colors.neutral[95],
     unselectedLabelColor: Mat3Colors.neutral[60],
     labelStyle: Mat3ThemeText.darkTheme.titleLarge,
     unselectedLabelStyle: Mat3ThemeText.darkTheme.titleMedium,
