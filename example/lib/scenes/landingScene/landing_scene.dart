@@ -36,7 +36,7 @@ class LandingScene extends StatelessWidget {
                     tooltip: 'Search icon',
                   ),
                 ],
-                title: Text('ATCO Design System'),
+                title: Text('Mat3 Design System'),
               ),
               bottomNavigationBar: BottomNavigationBar(
                 currentIndex: vm.selectedIndex,

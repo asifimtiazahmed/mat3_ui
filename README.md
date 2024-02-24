@@ -18,17 +18,17 @@ To add to your project, reference the package in your pubspec.yaml.
       ref: main
 ```
 
-2. Refrence it in your app like 'AtcoColors.primary' or if you are configuring your theme like this:
+2. Refrence it in your app like 'Mat3Colors.primary' or if you are configuring your theme like this:
 ```
-import 'package:mat3_ui/atco_ui.dart';
+import 'package:mat3_ui/Mat3_ui.dart';
 
 @override
   Widget build(BuildContext context) {
 
     return MaterialApp.router(
       title: 'YOUR_APP',
-      theme: AtcoTheme.lightTheme,
-      darkTheme: AtcoTheme.darkTheme,
+      theme: Mat3Theme.lightTheme,
+      darkTheme: Mat3Theme.darkTheme,
     );
   }
 ```

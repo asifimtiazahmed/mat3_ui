@@ -4,9 +4,9 @@ import 'package:material_ui/src/utils/extension_context.dart';
 import 'package:flutter/material.dart';
 
 /// Loading widget with predefined message.
-class AtcoLoading extends StatelessWidget {
+class Mat3Loading extends StatelessWidget {
   /// Constructor
-  const AtcoLoading({super.key, this.message});
+  const Mat3Loading({super.key, this.message});
 
   /// The message will be shown.
   /// If "null" then the predefined message will be used.

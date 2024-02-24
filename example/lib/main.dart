@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.system,
-      theme: Mat3Theme.darkTheme,
+      theme: Mat3Theme.lightTheme,
       darkTheme: Mat3Theme.darkTheme,
       title: 'Material3 Design System Demo',
       initialRoute: '/',

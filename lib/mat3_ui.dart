@@ -1,4 +1,4 @@
-library atco_ui;
+library Mat3_ui;
 
 export 'src/resources/mat3_colors.dart';
 export 'src/theme/mat3_theme.dart';

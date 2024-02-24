@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-/// Material 3 of ATCO colors.
+/// Material 3 of Mat3 colors.
 ///
 /// Reference:
 /// 1) https://www.figma.com/file/3vTg9unqtwvXm30r4Dl3Ba/IDES-Design-System?node-id=8288%3A225882

@@ -34,7 +34,7 @@ Future<void> displayLoadingMessage(
     builder: (_) => Mat3AlertDialog(
       content: SizedBox(
         height: 100,
-        child: AtcoLoading(message: message),
+        child: Mat3Loading(message: message),
       ),
       insetPadding: insetPadding,
     ),
