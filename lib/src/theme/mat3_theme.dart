@@ -8,8 +8,10 @@ import 'package:material_ui/src/theme/mat3_theme_button_text.dart';
 import 'package:material_ui/src/theme/mat3_theme_checkbox.dart';
 import 'package:material_ui/src/theme/mat3_theme_dialog.dart';
 import 'package:material_ui/src/theme/mat3_theme_divider.dart';
+import 'package:material_ui/src/theme/mat3_theme_dropdown.dart';
 import 'package:material_ui/src/theme/mat3_theme_expansion_tile.dart';
 import 'package:material_ui/src/theme/mat3_theme_icon.dart';
+import 'package:material_ui/src/theme/mat3_theme_icon_button.dart';
 import 'package:material_ui/src/theme/mat3_theme_input_decoration.dart';
 import 'package:material_ui/src/theme/mat3_theme_page_transition.dart';
 import 'package:material_ui/src/theme/mat3_theme_radiobutton.dart';
@@ -45,8 +47,10 @@ class Mat3Theme {
     switchTheme: Mat3SwitchTheme.lightTheme,
     radioTheme: Mat3RadioButtonTheme.lightTheme,
     iconTheme: Mat3IconTheme.lightTheme,
+    iconButtonTheme: Mat3IconButtonTheme.lightTheme,
     dividerTheme: Mat3DividerTheme.lightTheme,
     dialogTheme: Mat3DialogTheme.lightTheme,
+    dropdownMenuTheme: Mat3DropdownTheme.lighTheme,
     expansionTileTheme: Mat3ThemeExpansionTile.lightTheme,
     pageTransitionsTheme: Mat3PageTransition.pageTransitionTheme,
   );
@@ -72,6 +76,7 @@ class Mat3Theme {
     switchTheme: Mat3SwitchTheme.darkTheme,
     radioTheme: Mat3RadioButtonTheme.darkTheme,
     iconTheme: Mat3IconTheme.darkTheme,
+    iconButtonTheme: Mat3IconButtonTheme.darkTheme,
     dividerTheme: Mat3DividerTheme.darkTheme,
     dialogTheme: Mat3DialogTheme.darkTheme,
     expansionTileTheme: Mat3ThemeExpansionTile.darkTheme,

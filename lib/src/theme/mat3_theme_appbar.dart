@@ -8,8 +8,9 @@ class Mat3ThemeAppBar {
 
   /// Light theme configuration
   static final AppBarTheme lightTheme = AppBarTheme(
+
     backgroundColor: Mat3Colors.primary[50],
-    actionsIconTheme: const IconThemeData(color: Mat3Colors.white),
+    actionsIconTheme: const IconThemeData(color: Mat3Colors.lavenderWeb), //right side  icon
     iconTheme: const IconThemeData(color: Mat3Colors.lavenderWeb),
     titleTextStyle: Mat3ThemeText.lightTheme.titleLarge?.copyWith(
       color: Mat3Colors.spaceCadet[99],

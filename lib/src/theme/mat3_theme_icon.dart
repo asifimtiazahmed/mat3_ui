@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 class Mat3IconTheme {
 
   /// Light theme configuration
-  static const IconThemeData lightTheme = IconThemeData(color: Mat3Colors.black);
+  static IconThemeData lightTheme = IconThemeData(color: Mat3Colors.roseQuartz[40]);
 
   /// Dark theme configuration
-  static const IconThemeData darkTheme = IconThemeData(color: Mat3Colors.white);
+  static IconThemeData darkTheme = IconThemeData(color: Mat3Colors.primary[90]);
 }

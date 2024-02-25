@@ -8,19 +8,27 @@ class Mat3CheckboxTheme {
   static final CheckboxThemeData lightTheme = CheckboxThemeData(
     fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, true)),
     checkColor: MaterialStateColor.resolveWith((states) => _getCheckColor(states, true)),
+    side: MaterialStateBorderSide.resolveWith(
+          (states) => BorderSide(color: _getFillColor(states, true)),
+    ),
   );
 
   /// Dark theme configuration
   static final CheckboxThemeData darkTheme = CheckboxThemeData(
     fillColor: MaterialStateColor.resolveWith((states) => _getFillColor(states, false)),
     checkColor: MaterialStateColor.resolveWith((states) => _getCheckColor(states, false)),
+    side: MaterialStateBorderSide.resolveWith(
+          (states) => BorderSide(color: _getFillColor(states, false)),
+    ),
+
+
   );
 
   static Color _getFillColor(Set<MaterialState> states, bool isLightMode) {
     if (states.contains(MaterialState.disabled)) {
-      return isLightMode ? Mat3Colors.neutral[50]! : Mat3Colors.neutral[40]!;
+      return isLightMode ? Mat3Colors.neutral[70]! : Mat3Colors.neutral[40]!;
     } else {
-      return isLightMode ? Mat3Colors.primary : Mat3Colors.primary[80]!;
+      return isLightMode ? Mat3Colors.primary[80]! : Mat3Colors.primary[80]!;
     }
   }
 
