@@ -1,5 +1,7 @@
+import 'package:material_ui/mat3_ui.dart';
 import 'package:material_ui_eg/scenes/landingScene/landing_vm.dart';
 import 'package:flutter/material.dart';
+
 
 class TabButtons extends StatelessWidget {
   const TabButtons({super.key, required this.vm});
@@ -22,9 +24,15 @@ class TabButtons extends StatelessWidget {
           SizedBox(height: 10),
           Divider(),
           SizedBox(height: 10),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: ElevatedButton(child: Text('Elevated Button'), onPressed: () {}),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children:[
+              ElevatedButton(child: Text('Elevated Button'), onPressed: () {}),
+              FrostedButton(
+              onPressed: (){print('on pressed pressed');},
+              buttonText: 'Frosted Button',
+            ),
+            ],
           ),
           SizedBox(height: 10),
           ElevatedButton.icon(onPressed: () {}, label: Text('ELEVATED BUTTON'), icon: Icon(Icons.add)),
